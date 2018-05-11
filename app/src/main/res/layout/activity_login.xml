@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manHinhLogin"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="120dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_textview"
+                android:text="user" />
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_textview"
+                android:text="password" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/custom_editext"
+                android:hint="user or mail" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_editext"
+                android:hint="password" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:text="OK"
+            android:textColor="@color/mau_do"
+            android:background="@drawable/custom_dang_nhap"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:text="forget password"
+            android:textColor="@color/mau_do"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

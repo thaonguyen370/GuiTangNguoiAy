@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:background="@color/colorAccent"
+       android:layout_weight="5"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:weightSum="10"
+       android:layout_height="0dp">
+       <LinearLayout
+           android:background="@color/xanh"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+           <TextView
+               android:gravity="center"
+               android:textColor="@color/den"
+               android:textSize="20sp"
+               android:text="thay ảnh từ nguồn...."
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_weight="3"
+           android:layout_width="match_parent"
+           android:weightSum="10"
+           android:layout_height="0dp">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="7"
+               android:gravity="center"
+               android:text="folder"
+               android:textColor="@color/xanh"
+               android:textSize="15sp" />
+
+           <ImageButton
+               android:id="@+id/folderDialog"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="3"
+               android:background="@color/colorAccent"
+               android:src="@android:drawable/ic_menu_upload" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_weight="3"
+           android:layout_width="match_parent"
+           android:weightSum="10"
+           android:layout_height="0dp">
+
+           <TextView
+               android:gravity="center"
+               android:textColor="@color/xanh"
+               android:textSize="15sp"
+               android:text="Chụp ảnh"
+               android:layout_weight="7"
+               android:layout_width="0dp"
+               android:layout_height="match_parent" />
+
+           <ImageButton
+               android:id="@+id/anhDialog"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="3"
+               android:background="@color/colorAccent"
+               android:src="@android:drawable/ic_menu_camera" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_weight="3"
+           android:layout_width="match_parent"
+           android:weightSum="10"
+           android:layout_height="0dp">
+
+           <TextView
+               android:gravity="center"
+               android:textColor="@color/xanh"
+               android:textSize="15sp"
+               android:text="Cơ sở dữ liệu"
+               android:layout_weight="7"
+               android:layout_width="0dp"
+               android:layout_height="match_parent" />
+
+           <ImageButton
+               android:id="@+id/coSoDuLieuDialog"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="3"
+               android:background="@color/colorAccent"
+               android:src="@android:drawable/btn_default_small" />
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

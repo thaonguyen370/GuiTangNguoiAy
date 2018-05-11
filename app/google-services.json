@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "13378079378",
+    "firebase_url": "https://umet-704d4.firebaseio.com",
+    "project_id": "umet-704d4",
+    "storage_bucket": "umet-704d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13378079378:android:22f48dc74554d4aa",
+        "android_client_info": {
+          "package_name": "com.thaothao.nguyenvanthao.guitangnguoiay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13378079378-0lqjvd2o0bv12q00usanui38tns19j9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2bPYK42w8qk18S_6nNExZIDbBVtM3Aww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

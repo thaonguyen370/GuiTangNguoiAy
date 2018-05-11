@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/xanh" android:state_pressed="true"/>
+    <item android:color="@color/mau_do"/>
+    <!--<item android:drawable="@drawable/custom_buttion_main" android:color="@color/colorAccent" />-->
+
+</selector>

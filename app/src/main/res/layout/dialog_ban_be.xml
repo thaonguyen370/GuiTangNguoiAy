@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_height="550dp"
+    android:orientation="vertical"
+    android:padding="17dp"
+    android:layout_width="370dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/anh_dai_dien_1"
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:text="Ảnh đại diện"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/email"
+        android:background="@color/trang"
+        android:text="địa chỉ email"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btnchatBanBe"
+        android:layout_marginTop="25dp"
+        android:text="chat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+             android:id="@+id/goiDien_ban_be"
+            android:text="so dt"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/guiTinSMS_ban_be"
+            android:text="so dt"
+            android:drawableLeft="@drawable/ic_chat_black_24dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnHuyKetBan"
+        android:layout_marginTop="25dp"
+        android:text="Hủy kết bạn"
+        android:drawableLeft="@drawable/ic_remove_circle_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/btnHuyKetBan"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:text="huy ket ban"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--tools:layout_editor_absoluteY="355dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnchatBanBe"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:text="chat"-->
+        <!--tools:layout_editor_absoluteX="0dp"-->
+        <!--tools:layout_editor_absoluteY="291dp" />-->
+
+
+    <!--<ImageView-->
+
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="132dp"-->
+        <!--android:layout_height="133dp"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.427"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:srcCompat="@drawable/anh_dai_dien_1" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/email"-->
+        <!--android:layout_width="374dp"-->
+        <!--android:layout_height="54dp"-->
+        <!--android:layout_marginEnd="4dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:drawableLeft="@drawable/ic_email_black_24dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="email"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--tools:layout_editor_absoluteY="181dp" />-->
+    <!---->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/goiDien_ban_be"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:src="@drawable/ic_call_black_24dp"-->
+        <!--tools:layout_editor_absoluteX="0dp"-->
+        <!--tools:layout_editor_absoluteY="414dp" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/guiTinSMS_ban_be"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:src="@drawable/ic_sms_black_24dp"-->
+        <!--tools:layout_editor_absoluteX="0dp"-->
+        <!--tools:layout_editor_absoluteY="478dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:text="Ảnh đại diện"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.462"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+<!--<Button-->
+<!--android:textColor="@color/colorAccent"-->
+<!--android:textStyle="italic"-->
+<!--android:id="@+id/btnthanhVien"-->
+<!--android:padding="5dp"-->
+<!--android:hint="thanh vien"-->
+<!--android:textAlignment="center"-->
+<!--android:drawableRight="@drawable/ic_create_black_24dp"-->
+<!--android:background="@drawable/custom_dang_nhap"-->
+<!--android:layout_weight="2"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="0dp" />-->

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manHinhBanBe"
+
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"></LinearLayout>
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_weight="0.25"
+        android:background="@color/xanh_la_troi_dam"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Light"
+        >
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageButton
+                    android:background="@null"
+                    android:id="@+id/imgTimKiem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_search" />
+                <EditText
+                    android:background="@drawable/custom_editext"
+                    android:id="@+id/txtTimKiem"
+                    android:hint="Tìm bạn bè, tin nhắn..."
+                    android:textColorHint="@color/xanh"
+                    android:layout_weight="7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <ImageButton
+                    android:background="@null"
+                    android:id="@+id/load"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_rotate" />
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/den"
+                    android:gravity="center"
+                    android:text="Chuyen muc ban be"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_weight="8.75"
+        android:background="@color/trang"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp">0
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ListView
+                android:background="#00000000"
+                android:id="@+id/listBanBe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+        <TextView
+            android:background="@color/xam_nhat"
+            android:textColor="@color/den"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="nhung nguoi ban co the biet"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:layout_weight="3.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ListView
+                android:background="#00000000"
+                android:id="@+id/listNhungNguoiCoTheBiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/trang"
+        android:weightSum="5">
+
+        <ImageButton
+
+            android:id="@+id/btnTinNhan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+
+            android:src="@drawable/tinh_nhan1"
+            android:text="Tin nhắn" />
+
+        <ImageButton
+            android:id="@+id/btnBanBe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ban_be2"
+            android:text="Bạn bè" />
+
+        <ImageButton
+            android:id="@+id/btnBangTin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ban_tin1"
+            android:text="Bảng tin" />
+
+        <ImageButton
+            android:id="@+id/btnAmNhac"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/am_nhac1"
+            android:text="Âm nhạc" />
+
+        <ImageButton
+            android:id="@+id/btnCaNhan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ca_nhan1"
+            android:text="cá nhân" />
+    </LinearLayout>
+</LinearLayout>

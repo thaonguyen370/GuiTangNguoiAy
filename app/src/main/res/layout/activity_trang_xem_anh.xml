@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thaothao.nguyenvanthao.guitangnguoiay.TrangXemAnhActivity">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/xanh_la_troi_dam"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageButton
+                android:id="@+id/back_trangXem"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="?attr/actionModeCloseDrawable" />
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imgTimKiem"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_menu_search" />
+
+            <EditText
+                android:id="@+id/txtTimKiem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:hint="Nhap ten anh, or mo ta..."
+                android:textColorHint="@color/trang" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <GridView
+        android:numColumns="3"
+        android:id="@+id/GritviewAnh"
+        android:layout_width="374dp"
+        android:layout_height="493dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp" />
+
+
+</android.support.constraint.ConstraintLayout>

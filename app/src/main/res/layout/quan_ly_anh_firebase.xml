@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/trang"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:textColor="@color/mau_do"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+
+                android:text="cảm xúc"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/txtTenAnh_hinhAnh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="Cảm xúc của bạn"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/checkCamXuc"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:layout_weight="5">
+
+        <ImageView
+            android:layout_weight="9"
+            android:id="@+id/hinhAnh_hinhAnh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:id="@+id/checkAnh"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/checkFacebook"
+            android:layout_weight="1"
+            android:text="Facebook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/checkZalo"
+            android:layout_weight="1"
+            android:text="Zalo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/checkIntagram"
+            android:layout_weight="1"
+            android:text="Instagram"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/mayAnh_hinhAnh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/trang"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <ImageButton
+            android:id="@+id/thuwMuc_hinhAnh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/trang"
+            android:src="@android:drawable/ic_menu_upload_you_tube" />
+
+        <ImageButton
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/trang"
+            android:src="@android:drawable/checkbox_on_background" />
+
+        <ImageButton
+            android:id="@+id/xemDanhSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/trang"
+            android:src="@android:drawable/ic_menu_view" />
+    </LinearLayout>
+
+</LinearLayout>

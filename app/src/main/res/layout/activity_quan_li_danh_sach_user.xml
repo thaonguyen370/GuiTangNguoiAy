@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quanLiDanhSach"
+
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar1"
+        android:layout_weight="0.5"
+        android:background="@color/colorAccent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Light"
+        >
+        <LinearLayout
+
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageButton
+                    android:id="@+id/imgTimKiem_user"
+                    android:layout_width="0dp"
+                    android:background="@color/colorAccent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_search_category_default" />
+                <EditText
+                    android:id="@+id/txt_tim"
+                    android:hint="Tìm user,..."
+                    android:textColorHint="@color/xanh"
+                    android:layout_weight="7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <ImageButton
+                    android:id="@+id/addUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:src="@android:drawable/ic_input_add"
+                    android:tooltipText="add user vao" />
+                <ImageView
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:text="anh"
+                    android:textColor="@color/xanh"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textColor="@color/xanh"
+                    android:text="user/pass"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textColor="@color/xanh"
+                    android:textSize="11sp"
+                    android:text="delete"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textColor="@color/xanh"
+                    android:textSize="11sp"
+                    android:text="sua"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textColor="@color/xanh"
+                    android:textSize="11sp"
+                    android:text="khoa"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+
+        android:id="@+id/listUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:background="@color/trang">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/mau_do"
+
+            android:text="Back" />
+
+
+    </LinearLayout>
+</LinearLayout>

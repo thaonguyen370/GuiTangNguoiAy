@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <!--<android.support.v7.widget.Toolbar-->
+
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:layout_weight="0.25"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--android:theme="@style/Base.ThemeOverlay.AppCompat.Light">-->
+
+        <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="10">-->
+    <!--<ImageView-->
+        <!--android:id="@+id/imgTimKiem"-->
+        <!--android:src="@drawable/timkiem"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<EditText-->
+        <!--android:id="@+id/txtTinNhan"-->
+        <!--android:hint="Tìm bạn bè, tin nhắn..."-->
+        <!--android:textColorHint="@color/xanh"-->
+        <!--android:layout_weight="7"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/imgMayAnh"-->
+        <!--android:src="@drawable/mayanh"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<ImageView-->
+
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content" />-->
+<!--</LinearLayout>-->
+<!--</android.support.v7.widget.Toolbar>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="Tên ảnh "
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mô tả "
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/txtTenAnh_hinhAnh"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="tên ảnh"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtMoTa_hinhAnh"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="mô tả"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.75">
+
+        <ImageView
+            android:id="@+id/hinhAnh_hinhAnh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/mayAnh_hinhAnh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/trang"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <ImageButton
+            android:id="@+id/thuwMuc_hinhAnh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/trang"
+            android:src="@android:drawable/ic_menu_upload_you_tube" />
+
+        <ImageButton
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/trang"
+            android:src="@android:drawable/checkbox_on_background" />
+
+        <ImageButton
+            android:id="@+id/xemDanhSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/trang"
+            android:src="@android:drawable/ic_menu_view" />
+    </LinearLayout>
+
+</LinearLayout>

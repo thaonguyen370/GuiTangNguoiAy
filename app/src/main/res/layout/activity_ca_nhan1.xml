@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thaothao.nguyenvanthao.guitangnguoiay.caNhan1">
+    <ImageView
+        android:id="@+id/anhNenCaNhan"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anh_dai_dien_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="7dp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/anhDaiDienCaNhan"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/anh_dai_dien_2"
+        android:scaleType="centerCrop"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/tenUserCaNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Thaonguyen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anhDaiDienCaNhan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenUserCaNhan"
+        tools:ignore="MissingConstraints,UnknownId">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hsbdsaiuhd" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hsbdsaiuhd" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hsbdsaiuhd" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hsbdsaiuhd" />
+    </LinearLayout>
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:id="@+id/toolbar"-->
+
+        <!--android:background="@color/colorAccent"-->
+        <!--android:theme="@style/Base.ThemeOverlay.AppCompat.Light"-->
+        <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:weightSum="10"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/imgTimKiem"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@android:drawable/ic_menu_search"-->
+                <!--app:srcCompat="@android:drawable/ic_menu_search" />-->
+            <!--<EditText-->
+                <!--android:id="@+id/txtTinNhan"-->
+                <!--android:hint="Tìm bạn bè, tin nhắn..."-->
+                <!--android:textColorHint="@color/xanh"-->
+                <!--android:layout_weight="7"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/imgMayAnh"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:src="@android:drawable/ic_menu_preferences" />-->
+            <!--<ImageView-->
+
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <!--<ImageView-->
+    <!--android:id="@+id/anhNenCaNhan"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/anh_dai_dien"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--/>-->
+    <!--<ImageView-->
+    <!--android:id="@+id/anhDaiDienCaNhan"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--android:layout_marginTop="100dp"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--android:src="@drawable/anh_dai_dien_gai"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="200dp" />-->
+
+    <!--<TextView-->
+    <!--android:textSize="15sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:id="@+id/tenUserCaNhan"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Thaonguyen"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+
+    <!--app:layout_constraintTop_toBottomOf="@+id/anhDaiDienCaNhan" />-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="368dp"-->
+        <!--android:layout_height="230dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tenUserCaNhan">-->
+        <!--<Button-->
+            <!--android:text="sdsadasdsa"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+</android.support.constraint.ConstraintLayout>

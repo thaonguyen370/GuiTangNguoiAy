@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">//chon hinh dang ban dau cua buttion( chu nhat)
+    <solid android:color="@color/colorAccent"/>//mau nen
+    <size android:height="200dp"
+        android:width="200dp"/>
+    <corners
+        android:topRightRadius="30dp"
+        android:bottomLeftRadius="30dp"/>//bo goc ben duoi trai, Radius la bo hinh tron
+    <stroke android:color="@color/mau_do" android:width="4dp"/>
+    <gradient android:angle="45"
+        android:startColor="@color/vang"
+        android:centerColor="@color/xanh"
+        android:endColor="@color/mau_do"/>//goc phai chia het cho 45, chay tu mau nao den mau nao
+
+</shape>

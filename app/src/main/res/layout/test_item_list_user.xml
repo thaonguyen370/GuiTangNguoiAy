@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/anhDaiDien_item"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+
+
+            android:tooltipText="anh dai dien" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/user_item"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="user"></TextView>
+
+            <TextView
+                android:id="@+id/pass_item"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Pass" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:background="@color/trang"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/xoa_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_delete"
+            android:tooltipText="xoa" />
+
+        <ImageButton
+            android:background="@color/trang"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/sua_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_edit"
+
+            android:tooltipText="sua" />
+
+        <CheckBox
+            android:background="@color/trang"
+            android:layout_marginLeft="5dp"
+        android:id="@+id/khoa_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:checked="true"
+        android:tooltipText="tick la khoa" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context="com.thaothao.nguyenvanthao.guitangnguoiay.trangGuiTin">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"></LinearLayout>
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_weight="0.25"
+        android:background="@color/xanh_la_troi_dam"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageButton
+
+                android:id="@+id/back_trangGuiTin"
+                android:background="@null"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp_1" />
+
+            <TextView
+                android:textSize="30sp"
+                android:text="Chat"
+                android:gravity="center"
+                android:id="@+id/txtTinNhan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:textColorHint="@color/xanh" />
+            <ImageView
+                android:id="@+id/kkk"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <ListView
+            android:id="@+id/listTrangGui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@color/xam_nhat"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.75">
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/cemaraTrangGui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cemara2" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/forderTrangGui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/forder" />
+
+        <EditText
+            android:background="@drawable/custom_editext"
+            android:layout_weight="7"
+            android:id="@+id/thongDiep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nhap thong diep cua ban " />
+
+        <ImageButton
+            android:background="@color/vang"
+            android:layout_weight="1"
+            android:id="@+id/guiTrangGui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/taoNhom"
+        android:title="Tạo nhóm"/>
+
+    <item
+
+        android:id="@+id/themBan"
+        android:title="Thêm bạn"/>
+    <item
+        android:id="@+id/quetMa"
+        android:title="Quét mã QR"/>
+    <item
+        android:id="@+id/ChiaSeViTri"
+        android:title="Chia sẻ vị trí"/>
+
+
+</menu>

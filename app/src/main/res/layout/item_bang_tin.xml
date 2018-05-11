@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/mau_do"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iconHinh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/anhdaidienmacdinh"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+
+                android:id="@+id/itemTenNguoiDungBangTin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/itemThoiGianBangTin"
+                android:layout_width="match_parent"
+
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/xanh"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!--<TextView-->
+        <!--android:background="@color/vang"-->
+        <!--android:id="@+id/itemThongDiepBanTin"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="2" />-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_height="0dp">
+        <!--<android.support.constraint.ConstraintLayout-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/itemHinhBangTin"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:scaleType="centerInside" />-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</android.support.constraint.ConstraintLayout>-->
+        <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/itemHinhBangTin"
+                android:layout_width="240dp"
+                android:layout_height="246dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.567"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/xanh"
+                android:textSize="30sp"
+                android:id="@+id/itemThongDiepBanTin1"
+                android:layout_width="252dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:text="thông điệp1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/itemThongDiepBanTin"
+                android:layout_width="376dp"
+                android:layout_height="43dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="thông điệp2"
+                android:textColor="@color/mau_do"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemHinhBangTin" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:background="@color/trang"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:layout_height="0dp">
+
+        <CheckBox
+            android:button="@drawable/custom_like"
+            android:id="@+id/itemLikeBangTin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:background="@color/trang"
+            />
+
+        <ImageButton
+            android:id="@+id/itemBinhLuanbangTin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:background="@color/trang"
+            android:src="@drawable/binh_luan1" />
+        <LinearLayout
+            android:layout_weight="8.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <ImageButton
+            android:id="@+id/itemXemthembangTin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:background="@color/trang"
+            android:src="@drawable/thong_tin11" />
+    </LinearLayout>
+
+</LinearLayout>

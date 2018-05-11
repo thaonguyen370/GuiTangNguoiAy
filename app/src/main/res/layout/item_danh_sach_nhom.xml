@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:clickable="false"
+    android:focusableInTouchMode="false"
+    android:weightSum="10"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="15dp"
+        >
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Tên nhóm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Thành viên"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtTenNhom"
+                    android:textStyle="bold"
+                    android:textColor="@color/den"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Tên nhóm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtThanhVien"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Thành viên"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:descendantFocusability="blocksDescendants"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@color/trang"
+                    android:id="@+id/xoa_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_delete"
+                    android:tooltipText="xoa" />
+
+                <ImageButton
+                    android:descendantFocusability="blocksDescendants"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@color/trang"
+                    android:id="@+id/sua_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:tooltipText="sua" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

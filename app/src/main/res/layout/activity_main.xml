@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manHinh"
+    android:background="@color/xanh_la_troi_dam"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<android.support.v7.widget.Toolbar-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_weight="0.2"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--android:theme="@style/Base.ThemeOverlay.AppCompat.Light">-->
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+            <!--android:text="Xin chao tat ca moi nguoi"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <LinearLayout
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="5" >
+        <ImageView
+            android:src="@drawable/icon"
+            android:layout_width="150dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@drawable/custom_may_dangnhap"
+            android:layout_marginTop="20dp"
+            android:id="@+id/dangNhap"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+             />
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@drawable/custom_may_dang_ki"
+            android:layout_marginTop="20dp"
+            android:id="@+id/dangKi"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+           />
+        <Button
+            android:id="@+id/ngonNgu"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:background="@drawable/custom_ngon_ngu_may"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="online" />
+            <RadioButton
+                android:id="@+id/offline"
+                android:text="offline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

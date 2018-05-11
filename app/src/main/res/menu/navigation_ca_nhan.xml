@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_games_black_24dp"
+        android:id="@+id/troChoi"
+        android:title="Trò chơi"/>
+    <item
+        android:id="@+id/phim"
+        android:icon="@drawable/ic_local_movies_black_24dp"
+        android:title="Phim" />
+    <item
+        android:id="@+id/sach"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="Sách" />
+    <item
+        android:id="@+id/taiKhoan"
+        android:icon="@drawable/ic_taikhoan"
+        android:title="Tài khoản" />
+    <item
+        android:icon="@drawable/ic_playlist_add_check_black_24dp"
+        android:id="@+id/danhSachYeuThich"
+        android:title="Danh sách yêu thích"/>
+    <item
+        android:id="@+id/caiDat"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Cài đặt" />
+    <item
+        android:icon="@drawable/ic_add_alert_black_24dp"
+        android:id="@+id/thongBao"
+        android:title="Thông báo"/>
+    <item
+        android:id="@+id/baoCao"
+        android:icon="@drawable/ic_report_black_24dp"
+        android:title="Phản hồi" />
+    <item
+    android:icon="@drawable/ic_apps_black_24dp"
+    android:id="@+id/huongDanSuDung"
+    android:title="Hướng dẫn sự dụng" >
+        <menu>
+            <item android:id="@+id/menuTinNhan" android:title="Chat"/>
+            <item android:id="@+id/menuBanBe" android:title="Bạn bè"/>
+            <item android:id="@+id/menuBanTin" android:title="Bản tin"/>
+            <item android:id="@+id/menuAmNhac" android:title="Âm nhạc"/>
+            <item android:id="@+id/menuTrangChu" android:title="TRang chủ"/>
+
+        </menu>
+    </item>
+    <item
+        android:icon="@drawable/ic_location_on_black_24dp"
+        android:id="@+id/googleMap"
+        android:title="Google map"/>
+    <item
+        android:icon="@drawable/ic_widgets_black_24dp"
+        android:id="@+id/phuHuynh"
+        android:title="Dành cho phụ huynh"/>
+
+    <item
+        android:icon="@drawable/ic_widgets_black_24dp"
+        android:id="@+id/gioiThieu"
+        android:title="Giới thiệu sản phẩm"/>
+    <item
+        android:icon="@drawable/ic_widgets_black_24dp"
+        android:id="@+id/suKien5"
+        android:title="su kien5"/>
+    <item
+        android:icon="@drawable/ic_widgets_black_24dp"
+        android:id="@+id/suKien6"
+        android:title="su kien6"/>
+    <item
+        android:icon="@drawable/ic_widgets_black_24dp"
+        android:id="@+id/suKien7"
+        android:title="su kien7"/>
+    <item
+        android:icon="@drawable/ic_widgets_black_24dp"
+        android:id="@+id/suKien8"
+        android:title="su kien8"/>
+
+
+</menu>

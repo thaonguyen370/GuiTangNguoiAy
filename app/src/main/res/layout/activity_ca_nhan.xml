@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manHinhBangTin"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/toolbar"
+    android:layout_weight="0.25"
+    android:background="@color/xanh_la_troi_dam"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Light"
+    >
+    <LinearLayout
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/imgTimKiem"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:background="@null"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:src="@android:drawable/ic_menu_search"-->
+    <!--app:srcCompat="@android:drawable/ic_menu_search" />-->
+    <TextView
+        android:gravity="center"
+    android:id="@+id/txtTinNhan"
+    android:text="chào mừng đến Home"
+    android:textColor="@color/trang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:textSize="20sp"/>
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/imgMayAnh"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@null"-->
+    <!--android:src="@android:drawable/ic_menu_preferences" />-->
+    <ImageView
+
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+    android:layout_weight="6.75"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <android.support.constraint.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+    android:id="@+id/anhNenCaNhan"
+    android:layout_width="0dp"
+    android:layout_height="200dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/anh_dai_dien_1"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    tools:layout_editor_absoluteY="7dp"
+    tools:ignore="MissingConstraints" />
+    <ImageView
+    android:id="@+id/anhDaiDienCaNhan"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="100dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:src="@drawable/anh_dai_dien_2"
+    android:scaleType="centerCrop"
+    android:layout_width="200dp"
+    android:layout_height="200dp" />
+
+    <TextView
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:id="@+id/tenUserCaNhan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:text="Thaonguyen"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/anhDaiDienCaNhan" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <LinearLayout
+    android:layout_weight="1"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <Button
+    android:id="@+id/btnNhatKi"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:text="Nhật ký" />
+
+    <Button
+    android:id="@+id/btnAnh"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:text="Ảnh" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <EditText
+    android:id="@+id/txtCam"
+    android:gravity="center"
+    android:hint="bạn đang nghĩ gì? "
+    android:layout_weight="7"
+    android:layout_width="0dp"
+    android:layout_height="match_parent" />
+
+    <Button
+    android:id="@+id/btnDang"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:text="đăng" />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+    android:background="@color/trang"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <ImageButton
+    android:id="@+id/btnTinNhan"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@null"
+    android:src="@drawable/tinh_nhan1"
+    android:text="Tin nhắn" />
+
+    <ImageButton
+    android:id="@+id/btnBanBe"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@null"
+    android:src="@drawable/ban_be1"
+    android:text="Bạn bè" />
+
+    <ImageButton
+    android:id="@+id/btnBangTin"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@null"
+    android:src="@drawable/ban_tin1"
+    android:text="Bảng tin" />
+
+    <ImageButton
+    android:id="@+id/btnAmNhac"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@null"
+    android:src="@drawable/am_nhac1"
+    android:text="Âm nhạc" />
+
+    <ImageButton
+    android:id="@+id/btnCaNhan"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@null"
+    android:src="@drawable/ca_nhan2"
+    android:text="cá nhân" />
+    </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        app:headerLayout="@layout/header_ca_nhan"
+        android:background="@color/trang"
+        app:menu="@menu/navigation_ca_nhan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/manHinhBangTin"-->
+    <!--android:weightSum="10"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+
+    <!--android:orientation="vertical">-->
+    <!--<android.support.v7.widget.Toolbar-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_weight="0.25"-->
+        <!--android:background="@drawable/trang"-->
+        <!--android:theme="@style/Base.ThemeOverlay.AppCompat.Light"-->
+        <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:weightSum="10"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/imgTimKiem"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:background="@null"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@android:drawable/ic_menu_search"-->
+                <!--app:srcCompat="@android:drawable/ic_menu_search" />-->
+            <!--<EditText-->
+                <!--android:id="@+id/txtTinNhan"-->
+                <!--android:hint="Tìm bạn bè, tin nhắn..."-->
+                <!--android:textColorHint="@color/xanh"-->
+                <!--android:layout_weight="7"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/imgMayAnh"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@null"-->
+                <!--android:src="@android:drawable/ic_menu_preferences" />-->
+            <!--<ImageView-->
+
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <!--<LinearLayout-->
+        <!--android:layout_weight="6.75"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp">-->
+        <!--<android.support.constraint.ConstraintLayout-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/anhNenCaNhan"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/anh_dai_dien_1"-->
+                <!--app:layout_constraintHorizontal_bias="0.0"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--app:layout_constraintRight_toRightOf="parent"-->
+                <!--tools:layout_editor_absoluteY="7dp"-->
+                <!--tools:ignore="MissingConstraints" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/anhDaiDienCaNhan"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--android:layout_marginTop="100dp"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--app:layout_constraintRight_toRightOf="parent"-->
+                <!--android:src="@drawable/anh_dai_dien_2"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp" />-->
+
+            <!--<TextView-->
+                <!--android:textSize="15sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/tenUserCaNhan"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:text="Thaonguyen"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/anhDaiDienCaNhan" />-->
+
+
+        <!--</android.support.constraint.ConstraintLayout>-->
+
+
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:weightSum="10"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnNhatKi"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="5"-->
+                <!--android:text="Nhật ký" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnAnh"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="5"-->
+                <!--android:text="Ảnh" />-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_weight="1"-->
+            <!--android:weightSum="10"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp">-->
+            <!--<EditText-->
+                <!--android:id="@+id/txtCam"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="bạn đang nghĩ gì? "-->
+                <!--android:layout_weight="7"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnDang"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="3"-->
+                <!--android:text="đăng" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:background="@drawable/trang"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="5">-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnTinNhan"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/tinh_nhan1"-->
+            <!--android:text="Tin nhắn" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnBanBe"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/ban_be1"-->
+            <!--android:text="Bạn bè" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnBangTin"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/ban_tin1"-->
+            <!--android:text="Bảng tin" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnAmNhac"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/am_nhac1"-->
+            <!--android:text="Âm nhạc" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnCaNhan"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/ca_nhan2"-->
+            <!--android:text="cá nhân" />-->
+    <!--</LinearLayout>-->
+<!--</LinearLayout>-->
